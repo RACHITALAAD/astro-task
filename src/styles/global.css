@@ -4,6 +4,7 @@ html {
 }
 
 body {
+  font-family: 'Times New Roman', Times, serif;
   margin: 0 auto;
   width: 100%;
   max-width: 80ch;
@@ -43,6 +44,7 @@ h1 {
 }
 
 .nav-links a {
+  font-family: 'Times New Roman', Times, serif;
   display: block;
   text-align: center;
   padding: 10px 0;
@@ -50,11 +52,13 @@ h1 {
   font-size: 1.2rem;
   font-weight: bold;
   text-transform: uppercase;
+  transition: 1s;
 }
 
 .nav-links a:hover,
 .nav-links a:focus {
-  background-color: #ff9776;
+  background-color: #0d0950;
+  transform: scale(1.1);
 }
 
 .expanded {
