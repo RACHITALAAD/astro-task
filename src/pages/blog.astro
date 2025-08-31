@@ -1,42 +1,111 @@
 ---
-
 import Footer from '../components/Footer.astro';
 import Header from '../components/Header.astro';
 import BlogPost from '../components/BlogPost.astro';
 import '../styles/global.css';
-const pageTitle = "My Astro Learning Blog";
 
-// const allPosts = Object.values(import.meta.glob('./posts/*.md', { eager: true }));
+const pageTitle = "My Astro Learning Blog";
 const allPosts = await Astro.glob('../pages/posts/*.md');
 ---
 
 <html lang="en">
-	<head>
-		<meta charset="utf-8" />
-		<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
-		<meta name="viewport" content="width=device-width" />
-		<meta name="generator" content={Astro.generator} />
-		<title>{pageTitle}</title>
-	</head>
-	<body>
-		<!-- <a href="/">Home</a>
-        <a href="/about/">About</a>
-        <a href="/blog/">Blog</a> -->
-		<Header/>
+  <head>
+    <meta charset="utf-8" />
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+    <meta name="viewport" content="width=device-width" />
+    <meta name="generator" content={Astro.generator} />
+    <title>{pageTitle}</title>
+
+    <style>
+      body {
+        font-family: 'Arial', sans-serif;
+        margin: 0 auto;
+        max-width: 80ch;
+        padding: 1rem;
+        line-height: 1.6;
+        color: #111;
+        transition: color 0.3s ease;
+      }
+
+      html.dark body {
+        color: #ffffff; 
+      }
+
+      h1 {
+        font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+        font-size: 2rem;
+        margin-top: 1rem;
+        margin-bottom: 1rem;
+        color: #007b5e;
+      }
+
+      html.dark h1 {
+        color: #f4fbf9;
+      }
+
+      p {
+        font-size: 1.2rem;
+        font-family: 'Times New Roman', Times, serif;
+      }
+
+      html.dark p {
+        color: #ffffff; 
+      }
+
+      ul {
+        list-style: none;
+        padding-left: 0;
+        margin: 0;
+      }
+
+      li.blog-post {
+        margin: 0.5rem 0; 
+        padding: 0;       
+        background: none;
+        border-radius: 0;
+        transition: color 0.3s ease; 
+        color: #111;
+      }
+
+      li.blog-post a {
+        text-decoration: none;
+        color: #007b5e;
+        font-weight: bold;
+        transition: color 0.2s ease;
+      }
+
+      li.blog-post a:hover {
+        text-decoration: underline;
+      }
 
 
-		<h1>{pageTitle}</h1>
-        <p>This is where I will post about my journey learning Astro.</p>
-		<ul>
-			{allPosts.map((post) => (
-				<BlogPost url={post.url} title={post.frontmatter.title} />
-			))}
-        </ul>
+      html.dark li.blog-post {
+        color: #ffffff; 
+      }
 
-		<Footer/>
+      html.dark li.blog-post a {
+        color: #ffffff; 
+      }
 
-		<script src="../scripts/menu.js">
-            
-        </script>
-	</body>
+      html.dark li.blog-post a:hover {
+        color: #d1d1d1; 
+      }
+    </style>
+  </head>
+  <body>
+    <Header/>
+
+    <h1>{pageTitle}</h1>
+    <p>This is where I will post about my journey learning Astro.</p>
+
+    <ul>
+      {allPosts.map((post) => (
+        <li class="blog-post">
+          <BlogPost url={post.url} title={post.frontmatter.title} />
+        </li>
+      ))}
+    </ul>
+
+    <Footer/>
+  </body>
 </html>

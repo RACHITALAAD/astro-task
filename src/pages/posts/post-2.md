@@ -1,12 +1,23 @@
 ---
 layout: ../../layouts/MarkdownPostLayout.astro
-title: My Second Blog Post
-author: Astro Learner
-description: "After learning some Astro, I couldn't stop!"
+title: "Creating Reusable Components"
+author: "Rachita Laad"
+description: "Learning how to make and use reusable components in Astro."
 image:
     url: "https://docs.astro.build/assets/arc.webp"
-    alt: "The Astro logo on a dark background with a purple gradient arc."
-pubDate: 2025-08-30
-tags: ["astro", "blogging", "learning in public", "successes"]
+    alt: "The Astro logo on a dark background with a gradient arc."
+pubDate: 2025-08-31
+tags: ["astro", "components", "web development"]
 ---
-After a successful first week learning Astro, I decided to try some more. I wrote and imported a small component from memory!
+
+# Creating Reusable Components
+
+After setting up my first Astro project, I learned how to create reusable components. Components help me keep my code organized and maintainable.
+
+### What I Built
+
+- Header and Footer components
+- Navigation and Social links components
+- Greeting component with interactive buttons
+
+This experience taught me the power of component-based design in modern web development.

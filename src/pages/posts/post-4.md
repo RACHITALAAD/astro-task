@@ -1,12 +1,23 @@
 ---
 layout: ../../layouts/MarkdownPostLayout.astro
-title: My Fourth Blog Post
-author: Astro Learner
-description: "This post will show up on its own!"
+title: "Creating a Blog with Markdown Posts"
+author: "Rachita Laad"
+description: "Using Markdown and layouts to manage blog posts in Astro."
 image:
     url: "https://docs.astro.build/default-og-image.png"
-    alt: "The word astro against an illustration of planets and stars."
-pubDate: 2022-08-08
-tags: ["astro", "successes"]
+    alt: "Astro blog illustration."
+pubDate: 2025-08-31
+tags: ["astro", "blogging", "markdown", "layouts"]
 ---
-This post should show up with my other blog posts, because `import.meta.glob()` is returning a list of all my posts in order to create my list.
+
+# Creating a Blog with Markdown Posts
+
+Finally, I learned how to add content using Markdown files. Each post has metadata like title, author, description, tags, and images.
+
+### What I Learned
+
+- Using `import.meta.glob()` to fetch all Markdown posts dynamically.
+- Creating layouts for consistent page design.
+- Displaying posts with titles, images, and tags on the blog page.
+
+This setup makes it easy to add new posts and keep my blog organized.

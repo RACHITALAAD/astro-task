@@ -3,3 +3,22 @@ const { title, url } = Astro.props;
 ---
 
 <li><a href={url}>{title}</a></li>
+
+<style>
+  li {
+    margin: 0.5rem 0;
+  }
+  a {
+    font-family: 'Times New Roman', Times, serif;
+    color: #5e1784;
+    font-weight: 600;
+    text-decoration: none;
+  }
+  a:hover {
+    text-decoration: underline;
+  }
+
+  html.dark a {
+        color: #ffffff; 
+      }
+</style>
