@@ -5,6 +5,7 @@ const tags = [...new Set(allPosts.map((post: any) => post.frontmatter.tags).flat
 const pageTitle = "Tag Index";
 ---
 <BaseLayout pageTitle={pageTitle}>
+
   <div class="tags">
     {tags.map((tag) => (
       <p class="tag"><a href={`/tags/${tag}`}>{tag}</a></p>
@@ -17,11 +18,13 @@ const pageTitle = "Tag Index";
   }
 
   .tags {
+    font-family: 'Times New Roman', Times, serif;
     display: flex;
     flex-wrap: wrap;
   }
 
   .tag {
+    font-family: 'Times New Roman', Times, serif;
     margin: 0.25em;
     border: dotted 1px #a1a1a1;
     border-radius: .5em;
@@ -29,4 +32,11 @@ const pageTitle = "Tag Index";
     font-size: 1.15em;
     background-color: #F8FCFD;
   }
+ 
+  .title {
+    font-family:'Times New Roman', Times, serif
+    font-size: 2em;
+    margin-bottom: 1em;
+  }
+
 </style>
