@@ -12,14 +12,13 @@ Clean & Responsive: A mobile-first design that looks great on any device.
 
 Theme Support: Includes built-in light and dark theme support.
 
-📁 Project Structure
-Here is an overview of the file structure for this project:
+## 📁 Project Structure
 
+```text
 astro-task/
-├── public/
-│   └── favicon.svg
+├── public/                  
 ├── src/
-│   ├── components/
+│   ├── components/           
 │   │   ├── BlogPost.astro
 │   │   ├── Footer.astro
 │   │   ├── Greeting.jsx
@@ -28,17 +27,16 @@ astro-task/
 │   │   ├── Navigation.astro
 │   │   ├── Social.astro
 │   │   └── ThemeIcon.astro
-│   ├── layouts/
+│   ├── layouts/             
 │   │   ├── BaseLayout.astro
 │   │   └── MarkdownPostLayout.astro
-│   ├── pages/
+│   ├── pages/              
 │   │   ├── posts/
 │   │   │   ├── post-1.md
 │   │   │   ├── post-2.md
 │   │   │   ├── post-3.md
 │   │   │   └── post-4.md
 │   │   ├── tags/
-│   │   │   └── [tag].astro
 │   │   ├── about.astro
 │   │   ├── blog.astro
 │   │   ├── index.astro
