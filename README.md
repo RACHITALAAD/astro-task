@@ -50,43 +50,39 @@ astro-task/
 ```
 
 ### 🛠️ Installation & Development
-Get your local development environment set up with these simple steps.
 
-Clone the repository:
+Get your local development environment set up with these simple steps:
 
+1. **Clone the repository**
+
+```bash
 git clone <your-repo-url>
 cd astro-task
+```
 
-Install dependencies:
+2. **Install dependencies**
 
+```bash
 npm install
+```
 
-Start the development server:
+3. **Start the development server**
 
+```bash
 npm run dev
+```
 
-Your site will be available at http://localhost:4321.
+## 📝 Features
 
-### 📝 Features
-Markdown-based blog posts with frontmatter support.
+- Markdown-based blog posts
+- Reusable Astro components
+- Light and dark mode support
+- Custom layouts for pages and posts
+- Responsive design
 
-Reusable Astro components for easy maintenance.
+## 📚 Technologies Used
 
-Light and dark mode support toggled by the user.
-
-Custom layouts for standard pages and blog posts.
-
-Responsive design for mobile, tablet, and desktop.
-
-RSS feed generation for blog subscribers.
-
-Tag-based post filtering.
-
-### 📚 Technologies Used
-Astro – The web framework for building fast, content-driven websites.
-
-HTML, CSS, JavaScript – The core technologies of the web.
-
-JSX (React) – For interactive UI components.
-
-Markdown – For writing clean and simple blog post content.
+- Astro
+- HTML, CSS, JavaScript
+- JSX for React components
+- Markdown for blog posts
