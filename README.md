@@ -1,43 +1,81 @@
-# Astro Starter Kit: Minimal
+# Astro Task Project
 
-```sh
-npm create astro@latest -- --template minimal
-```
+A modern, minimal Astro project to showcase a blog platform with Markdown posts, reusable components, and a clean design.
 
-> 🧑‍🚀 **Seasoned astronaut?** Delete this file. Have fun!
+---
+
+## 🚀 Project Overview
+
+This project uses **Astro** to build a blog website with a minimal setup. It supports:
+
+- Markdown-based blog posts
+- Reusable components and layouts
+- Clean, responsive design
+- Light and dark theme support
+
+---
+
+## 📁 Project Structure
 
 ## 🚀 Project Structure
 
-Inside of your Astro project, you'll see the following folders and files:
-
 ```text
-/
-├── public/
+astro-task/
+├── public/                  
 ├── src/
-│   └── pages/
-│       └── index.astro
-└── package.json
-```
+│   ├── components/           
+│   │   ├── BlogPost.astro
+│   │   ├── Footer.astro
+│   │   ├── Greeting.jsx
+│   │   ├── Hamburger.astro
+│   │   ├── Header.astro
+│   │   ├── Navigation.astro
+│   │   ├── Social.astro
+│   │   └── ThemeIcon.astro
+│   ├── layouts/             
+│   │   ├── BaseLayout.astro
+│   │   └── MarkdownPostLayout.astro
+│   ├── pages/              
+│   │   ├── posts/
+│   │   │   ├── post-1.md
+│   │   │   ├── post-2.md
+│   │   │   ├── post-3.md
+│   │   │   └── post-4.md
+│   │   ├── tags/
+│   │   ├── about.astro
+│   │   ├── blog.astro
+│   │   ├── index.astro
+│   │   └── rss.xml.js
+│   ├── scripts/
+│   │   └── menu.js
+│   └── styles/
+│       └── global.css
+├── package.json
+└── README.md
 
-Astro looks for `.astro` or `.md` files in the `src/pages/` directory. Each page is exposed as a route based on its file name.
+🛠 Installation & Development
 
-There's nothing special about `src/components/`, but that's where we like to put any Astro/React/Vue/Svelte/Preact components.
+1. Clone the repository:
+git clone <your-repo-url>
+cd astro-task
 
-Any static assets, like images, can be placed in the `public/` directory.
+2. Install dependencies
+npm install
 
-## 🧞 Commands
+3. Start the development server 
+npm run dev
 
-All commands are run from the root of the project, from a terminal:
+📝 Features
 
-| Command                   | Action                                           |
-| :------------------------ | :----------------------------------------------- |
-| `npm install`             | Installs dependencies                            |
-| `npm run dev`             | Starts local dev server at `localhost:4321`      |
-| `npm run build`           | Build your production site to `./dist/`          |
-| `npm run preview`         | Preview your build locally, before deploying     |
-| `npm run astro ...`       | Run CLI commands like `astro add`, `astro check` |
-| `npm run astro -- --help` | Get help using the Astro CLI                     |
+Markdown-based blog posts
+Reusable Astro components
+Light and dark mode support
+Custom layouts for pages and posts
+Responsive design
 
-## 👀 Want to learn more?
+📚 Technologies Used
 
-Feel free to check [our documentation](https://docs.astro.build) or jump into our [Discord server](https://astro.build/chat).
+Astro
+HTML, CSS, JavaScript
+JSX for React components
+Markdown for blog posts
