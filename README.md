@@ -47,6 +47,7 @@ astro-task/
 │       └── global.css
 ├── package.json
 └── README.md
+```
 
 ### 🛠️ Installation & Development
 Get your local development environment set up with these simple steps.
